@@ -13,6 +13,13 @@
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
+
+<!-- Admin LTE Theme JS -->
+ <script type="text/javascript" src="boot_js/jquery-2.2.3.min.js"></script>
+   <script type="text/javascript" src="boot_js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="boot_js/demo.js"></script>
+
+
   <script type="text/javascript" src="libs/angular/angular.min.js"></script>
   <script type="text/javascript" src="libs/angular-route/angular-route.min.js"></script>
 
@@ -25,6 +32,9 @@
   <script type="text/javascript" src="js/auth/auth.factory.js"></script>
   <script type="text/javascript" src="js/auth/auth.controller.js"></script>
 
+
+  <script type="text/javascript" src="js/menuController.js"></script>
+
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini" style="background-color:rgba(83, 15, 15, 0.32)">
@@ -33,11 +43,8 @@
   <div ng-include="'partials/header.html'"></div>
   <div class="content" ng-view>
 
-    
   </div>
- 
-  
-  
+
 </body>
 
 </html>

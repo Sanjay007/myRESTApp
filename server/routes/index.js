@@ -4,6 +4,7 @@ var router = express.Router();
 var auth = require('./auth.js');
 var products = require('./products.js');
 var user = require('./users.js');
+var menu = require('./menu.js');
 
 /*
  * Routes that can be accessed by any one
@@ -27,5 +28,13 @@ router.get('/api/v1/admin/user/:id', user.getOne);
 router.post('/api/v1/admin/user/', user.create);
 router.put('/api/v1/admin/user/:id', user.update);
 router.delete('/api/v1/admin/user/:id', user.delete);
+
+
+/**
+ * Menu Operations
+ */
+
+router.post('/api/v1/menu/', menu.create);
+
 
 module.exports = router;

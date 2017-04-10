@@ -41,6 +41,14 @@ myApp.factory('UserAuthFactory', function($window, $location, $http, Authenticat
   }
 });
 
+myApp.factory('MenuFactory', function($window, $location, $http, AuthenticationFactory) {
+  return {
+    create: function(menu) {
+      return $http.post('http://localhost:3000/api/v1/menu',menu);
+    }
+  }
+});
+
 myApp.factory('TokenInterceptor', function($q, $window) {
   return {
     request: function(config) {

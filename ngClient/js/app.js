@@ -37,7 +37,7 @@ myApp.config(function($routeProvider, $httpProvider) {
       }
     }).when('/create-menu',
      {templateUrl: 'partials/create-menu.html',
-      controller: 'MenuCntrl'
+      controller: 'MenuCtrl'
     }).otherwise({
       redirectTo: '/login'
     });
