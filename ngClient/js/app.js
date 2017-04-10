@@ -35,6 +35,9 @@ myApp.config(function($routeProvider, $httpProvider) {
       access: {
         requiredLogin: true
       }
+    }).when('/create-menu',
+     {templateUrl: 'partials/create-menu.html',
+      controller: 'MenuCntrl'
     }).otherwise({
       redirectTo: '/login'
     });

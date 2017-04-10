@@ -13,7 +13,8 @@ myApp.controller("HeaderCtrl", ['$scope', '$location', 'UserAuthFactory',
 
 myApp.controller("HomeCtrl", ['$scope',
   function($scope) {
-    $scope.name = "Home Controller";
+    $scope.name = "Welcome Admin";
+    $scope.username = "Welcome Admin"
   }
 ]);
 
