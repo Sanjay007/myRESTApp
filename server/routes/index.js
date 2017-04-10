@@ -35,6 +35,7 @@ router.delete('/api/v1/admin/user/:id', user.delete);
  */
 
 router.post('/api/v1/menu/', menu.create);
+router.get('/api/v1/menu/', menu.getAll);
 
 
 module.exports = router;

@@ -45,7 +45,12 @@ myApp.factory('MenuFactory', function($window, $location, $http, AuthenticationF
   return {
     create: function(menu) {
       return $http.post('http://localhost:3000/api/v1/menu',menu);
+    },
+    getAllmenu :function(){
+       return $http.get('http://localhost:3000/api/v1/menu');
     }
+
+
   }
 });
 

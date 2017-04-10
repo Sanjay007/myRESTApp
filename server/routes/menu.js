@@ -4,6 +4,8 @@ var menu = {
 
   getAll: function(req, res) {
     var allMenu = data; // Spoof a DB call
+
+   
     res.json(allMenu);
   },
 
