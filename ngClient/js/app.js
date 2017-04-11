@@ -38,6 +38,9 @@ myApp.config(function($routeProvider, $httpProvider) {
     }).when('/create-menu',
      {templateUrl: 'partials/create-menu.html',
       controller: 'MenuCtrl'
+    }).when('/genpdf',
+     {templateUrl: 'partials/invoice.html',
+      controller: 'MenuCtrl'
     }).otherwise({
       redirectTo: '/login'
     });
