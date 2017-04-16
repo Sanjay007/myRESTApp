@@ -17,6 +17,7 @@ myApp.controller('LoginCtrl', ['$scope','$rootScope', '$window', '$location', 'U
           AuthenticationFactory.userRole = data.user.role;
 
           $window.sessionStorage.token = data.token;
+		  console.log(data.token);
           $window.sessionStorage.user = data.user.username; // to fetch the user details on refresh
           $window.sessionStorage.userRole = data.user.role; // to fetch the user details on refresh
 
